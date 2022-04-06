@@ -25,4 +25,21 @@ public class Owner {
     public void add(Vehicule vehicule) {
         this.v.add(vehicule);
     }
+
+    public void startAllVehicules() {
+        for (Vehicule vehicule : v) {
+            if(vehicule instanceof Boat) {
+                vehicule.start();
+                ((Boat) vehicule).sail();
+            }
+            else if(vehicule instanceof Avion) {
+                vehicule.start();
+                ((Avion) vehicule).fly();
+            }
+            else {
+                vehicule.start();
+
+            }
+        }
+    }
 }

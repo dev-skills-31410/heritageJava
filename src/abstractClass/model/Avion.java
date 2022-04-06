@@ -14,4 +14,8 @@ public class Avion extends Vehicule{
     public void stop() {
         System.out.println("attérit");
     }
+
+    public void fly() {
+        System.out.println("passage dans fly");
+    }
 }

@@ -14,4 +14,8 @@ public class Boat extends Vehicule {
     public void stop() {
         System.out.println("le bateau jette son encre");
     }
+
+    public void sail() {
+        System.out.println("passage sail");
+    }
 }
